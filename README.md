@@ -1,79 +1,72 @@
-# Tourism and 311 Service Burden Analysis
+# Search Interest and 311 Request Patterns
 
-This repository contains the code for a TSA Data Science & Analytics project examining how tourism activity is associated with resident-reported service burden across Boston, Seattle, and Washington, DC.
+A TSA Data Science & Analytics project exploring monthly search interest and service-request patterns in Boston, Seattle and Washington, DC. This subsequent repair makes the analysis reproducible and makes its measurement limits explicit. The original competition document is preserved unchanged.
 
-## Research Question
+**Historical correlations are not independently reproduced:** original municipal snapshots and Google Trends exports are absent. The archived notebooks report approximately Boston 0.22, Seattle 0.01 and Washington DC 0.74. Those are historical outputs, not newly verified findings. See `docs/results-correction.md`.
 
-How is tourism activity associated with tourism-related 311 service requests, and how does that relationship differ across cities?
+## Run the offline example
 
-## Data Sources
+Use Python 3.12 and a new environment:
 
-The project combines two public data sources:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements-dev.lock.txt
+python -m pip check
+python -m pytest -q
+python tourism_pipeline.py --config tests/fixtures/config.json --out runs/fixture
+python scripts/check_notebooks.py --run runs/fixture
+python scripts/keyword_sensitivity.py --config tests/fixtures/config.json --out runs/keyword-sensitivity
+python scripts/plot_run.py --run runs/fixture --out runs/fixture-plots
+```
 
-- **Google Trends** — used as a proxy for monthly tourism activity
-- **Municipal 311 service-request data** — used to measure resident-reported service burden
+On Linux/macOS activate with `source .venv/bin/activate`. The fixture invents three years of requests/search-interest values for all three cities, including intentional gaps and invalid inputs. It is a software check, not city research. Charts prominently identify synthetic data. The run commands make no network calls. Existing output directories are rejected to preserve previous evidence.
 
-The analysis standardizes both sources to a monthly city-level format.
+`requirements.txt` contains runtime ranges; `requirements-dev.txt` adds notebook/testing tools; `requirements-plot.txt` adds matplotlib. `requirements-dev.lock.txt` records the tested dependency versions, including plotting. It is a version snapshot, not a cryptographically locked package archive.
 
-## Key Variables
+## Use observed snapshots
 
-Each city-month observation includes:
+Read `docs/data-acquisition.md` for official sources, schemas, explicit Google Trends exports, conversion commands and the full manifest contract. Source paths resolve relative to the config file, with no broad CSV glob that can mix cities. The config specifies analysis start and exclusive end months, city schema mappings, source provenance, timezones, verified complete months and the fixed term basket.
 
-- tourism intensity
-- total 311 service requests
-- tourism-related 311 complaints
-- tourism complaint share
+```powershell
+python tourism_pipeline.py --config data/observed-config.json --out runs/observed-run
+```
 
-Tourism complaint share is used to normalize differences in city size and baseline complaint volume.
+For bounded source-schema checks only:
 
-## Repository Contents
+```powershell
+python scripts/fetch_public_samples.py --out data/source-smoke --limit 100
+```
 
-- `tourism_search_trends.ipynb`  
-  Collects and processes monthly Google Trends tourism-interest data.
+The sample command stores exact official JSON responses, selected-field CSVs, cleaned/rejected rows, source URLs, timestamps and hashes. Samples have no verified complete months and cannot be used as full-month research observations. Rebuilding the historical study requires the original snapshots or a clearly documented new data collection, including genuine Trends exports.
 
-- `311_processing.ipynb`  
-  Cleans 311 service-request data, identifies tourism-related complaints using keyword matching, and aggregates monthly complaint metrics.
+## Measurements and safeguards
 
-- `correlation_analysis.ipynb`  
-  Calculates correlations between tourism indicators and 311 metrics across Boston, Seattle, and Washington, DC.
+| Output | Meaning |
+|---|---|
+| `n_requests` | Accepted unique request IDs in the month; not necessarily calls or complaints |
+| `n_keyword_matches` | Request categories matching the declared regex rule; no attribution to visitors |
+| `n_unknown_type` | Requests with unknown categories, retained in the denominator |
+| `keyword_request_share` | Matched requests divided by accepted requests; undefined for zero requests |
+| `search_interest_index` | Equal-weight mean of a complete fixed term basket on normalized relative scales; not visitor counts |
+| `eligible` | Complete source coverage explicitly declared, every expected term usable, and a defined request share |
 
-## Methods
+Dates use each city's local calendar month. Naive dates are localized to the declared timezone; ambiguous/nonexistent DST times are quarantined. ArcGIS epoch values require explicit conversion. Request IDs preserve leading zeros. Exact repeated IDs with matching timestamp/category are deduplicated and audited; conflicting versions stop the run. Invalid IDs/dates and out-of-window records are saved with reasons. Inspect exclusions before interpreting the accepted-record denominator.
 
-The project includes:
+All city-months stay in the requested calendar grid. A missing month becomes zero only when complete source coverage has been explicitly declared; otherwise it stays missing. This declaration is a provenance assertion requiring external verification, not completeness inferred from a few rows. Trends monthly keys are strict; duplicates fail. Missing terms, partial periods and censored `<1` values make the composite unavailable. No averages over changing term baskets or invented zeros are used.
 
-- data cleaning and standardization
-- monthly aggregation
-- tourism-related complaint classification
-- feature construction
-- correlation analysis
-- cross-city comparison
-- seasonal time-series analysis
-- data visualization
+Correlations are per city, with paired counts and exclusion reasons. First differences use adjacent calendar months only. Seasonal demeaning requires at least two observations for every calendar month. These are descriptive sensitivities; no causal effects or significance tests are asserted. Pooled cross-city correlation is intentionally absent because separately normalized indices and reporting systems are not directly comparable.
 
-## Findings
+## Saved run and notebooks
 
-The relationship between tourism activity and resident service burden varies substantially by city.
+Each run saves clean requests, rejected/duplicate rows, clean Trends data, out-of-window Trends rows, both monthly tables, a full combined coverage table, correlations, audit counts, status and provenance. Provenance records configuration, source hashes/metadata, code hash, package versions and output hashes. Only `status.json` state `complete` is ready for analysis.
 
-- **Boston:** moderate positive association between tourism intensity and tourism-related service demand
-- **Seattle:** weak relationship between tourism intensity and tourism complaint share
-- **Washington, DC:** strong positive relationship between tourism intensity and both tourism-related calls and tourism complaint share
+The three notebooks read the same hash-verified run, execute independently, and perform no live downloads. Set `TOURISM_RUN` or pass `--run` to inspect another run. Executed copies are saved inside that run directory. `scripts/keyword_sensitivity.py` saves both the broad service-category rule and the narrower explicit visitor-term rule; neither is a validated tourist-attribution classifier. `scripts/plot_run.py` verifies input hashes before rendering.
 
-These differences suggest that tourism pressure interacts with city infrastructure and service systems differently across locations.
+## Historical record and limits
 
-## Tech Stack
+`docs/historical/` preserves the original notebooks and README; the competition PDF remains unchanged. Their limitations and original outputs are documented separately from this repaired code. Do not describe current synthetic fixtures or bounded API samples as reproducing the historical results.
 
-- Python
-- pandas
-- NumPy
-- matplotlib
-- Jupyter Notebook
+Keyword matching does not establish who caused or submitted a request. Request share does not control for population, reporting propensity, municipal service scope, seasonality or other confounding. Relative search interest is not tourism activity per resident. The repair supports clearer descriptive analysis and source auditing; it does not establish tourism-caused service burden.
 
-## Limitations
-
-This analysis is descriptive rather than causal.
-
-Google Trends is used as a proxy for tourism activity, and 311 complaint classification depends on keyword-based filtering. Differences in reporting practices across cities may also affect results.
-
-## Competition Context
-
-Developed for the 2025–2026 TSA Data Science & Analytics competition.
+GitHub Actions runs offline tests, notebooks and fixture plots after push. See `docs/validation.md` for completed checks and the remaining data limitation.

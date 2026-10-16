@@ -1,0 +1,1 @@
+All request and search-interest rows are invented, deterministic software fixtures. They are not historical city records or Google Trends data. Gaps, partial/censored terms, duplicate IDs, unknown types, invalid dates and zero-count coverage are intentional.
