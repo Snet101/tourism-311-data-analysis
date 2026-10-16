@@ -1,0 +1,109 @@
+city,month,term,value,is_partial
+Washington DC,2022-01,things to do in Washington DC,58.64,False
+Washington DC,2022-01,visit Washington DC,59.64,False
+Washington DC,2022-01,Washington DC tourist attractions,60.64,False
+Washington DC,2022-02,things to do in Washington DC,56.18,False
+Washington DC,2022-02,visit Washington DC,57.18,False
+Washington DC,2022-02,Washington DC tourist attractions,58.18,False
+Washington DC,2022-03,things to do in Washington DC,52.53,False
+Washington DC,2022-03,visit Washington DC,53.53,False
+Washington DC,2022-03,Washington DC tourist attractions,54.53,False
+Washington DC,2022-04,things to do in Washington DC,48.12,False
+Washington DC,2022-04,visit Washington DC,49.12,False
+Washington DC,2022-04,Washington DC tourist attractions,50.12,False
+Washington DC,2022-05,things to do in Washington DC,43.47,False
+Washington DC,2022-05,visit Washington DC,44.47,False
+Washington DC,2022-05,Washington DC tourist attractions,45.47,False
+Washington DC,2022-06,things to do in Washington DC,39.15,False
+Washington DC,2022-06,visit Washington DC,40.15,False
+Washington DC,2022-06,Washington DC tourist attractions,41.15,False
+Washington DC,2022-07,things to do in Washington DC,35.65,False
+Washington DC,2022-07,visit Washington DC,36.65,False
+Washington DC,2022-07,Washington DC tourist attractions,37.65,False
+Washington DC,2022-08,things to do in Washington DC,33.4,False
+Washington DC,2022-08,visit Washington DC,34.4,False
+Washington DC,2022-08,Washington DC tourist attractions,35.4,False
+Washington DC,2022-09,things to do in Washington DC,32.68,False
+Washington DC,2022-09,visit Washington DC,33.68,False
+Washington DC,2022-09,Washington DC tourist attractions,34.68,False
+Washington DC,2022-10,things to do in Washington DC,33.62,False
+Washington DC,2022-10,visit Washington DC,34.62,False
+Washington DC,2022-10,Washington DC tourist attractions,35.62,False
+Washington DC,2022-11,things to do in Washington DC,36.13,False
+Washington DC,2022-11,visit Washington DC,37.13,False
+Washington DC,2022-11,Washington DC tourist attractions,38.13,False
+Washington DC,2022-12,things to do in Washington DC,39.99,False
+Washington DC,2022-12,visit Washington DC,40.99,False
+Washington DC,2022-12,Washington DC tourist attractions,41.99,False
+Washington DC,2023-01,things to do in Washington DC,44.81,False
+Washington DC,2023-01,visit Washington DC,45.81,False
+Washington DC,2023-01,Washington DC tourist attractions,46.81,False
+Washington DC,2023-02,things to do in Washington DC,50.09,False
+Washington DC,2023-02,visit Washington DC,51.09,False
+Washington DC,2023-02,Washington DC tourist attractions,52.09,False
+Washington DC,2023-03,things to do in Washington DC,55.28,False
+Washington DC,2023-03,visit Washington DC,56.28,False
+Washington DC,2023-03,Washington DC tourist attractions,57.28,False
+Washington DC,2023-04,things to do in Washington DC,59.85,False
+Washington DC,2023-04,visit Washington DC,60.85,False
+Washington DC,2023-04,Washington DC tourist attractions,61.85,False
+Washington DC,2023-05,things to do in Washington DC,63.35,False
+Washington DC,2023-05,visit Washington DC,64.35,False
+Washington DC,2023-05,Washington DC tourist attractions,65.35,False
+Washington DC,2023-06,things to do in Washington DC,65.4,False
+Washington DC,2023-06,visit Washington DC,66.4,False
+Washington DC,2023-06,Washington DC tourist attractions,67.4,False
+Washington DC,2023-07,things to do in Washington DC,65.84,False
+Washington DC,2023-07,visit Washington DC,66.84,False
+Washington DC,2023-07,Washington DC tourist attractions,67.84,False
+Washington DC,2023-08,things to do in Washington DC,64.64,False
+Washington DC,2023-08,visit Washington DC,65.64,False
+Washington DC,2023-08,Washington DC tourist attractions,66.64,False
+Washington DC,2023-09,things to do in Washington DC,61.98,False
+Washington DC,2023-09,visit Washington DC,62.98,False
+Washington DC,2023-09,Washington DC tourist attractions,63.98,False
+Washington DC,2023-10,things to do in Washington DC,58.18,False
+Washington DC,2023-10,visit Washington DC,59.18,False
+Washington DC,2023-10,Washington DC tourist attractions,60.18,False
+Washington DC,2023-11,things to do in Washington DC,53.7,False
+Washington DC,2023-11,visit Washington DC,54.7,False
+Washington DC,2023-11,Washington DC tourist attractions,55.7,False
+Washington DC,2023-12,things to do in Washington DC,49.07,False
+Washington DC,2023-12,visit Washington DC,50.07,False
+Washington DC,2023-12,Washington DC tourist attractions,51.07,False
+Washington DC,2024-01,things to do in Washington DC,44.84,False
+Washington DC,2024-01,visit Washington DC,45.84,False
+Washington DC,2024-01,Washington DC tourist attractions,46.84,False
+Washington DC,2024-02,things to do in Washington DC,41.5,False
+Washington DC,2024-02,visit Washington DC,42.5,False
+Washington DC,2024-02,Washington DC tourist attractions,43.5,False
+Washington DC,2024-03,things to do in Washington DC,39.47,False
+Washington DC,2024-03,visit Washington DC,40.47,False
+Washington DC,2024-03,Washington DC tourist attractions,41.47,False
+Washington DC,2024-04,things to do in Washington DC,39.0,False
+Washington DC,2024-04,visit Washington DC,40.0,False
+Washington DC,2024-04,Washington DC tourist attractions,41.0,False
+Washington DC,2024-05,things to do in Washington DC,40.18,False
+Washington DC,2024-05,visit Washington DC,41.18,False
+Washington DC,2024-05,Washington DC tourist attractions,42.18,False
+Washington DC,2024-06,things to do in Washington DC,42.92,False
+Washington DC,2024-06,visit Washington DC,43.92,False
+Washington DC,2024-06,Washington DC tourist attractions,44.92,False
+Washington DC,2024-07,things to do in Washington DC,46.95,False
+Washington DC,2024-07,visit Washington DC,47.95,False
+Washington DC,2024-07,Washington DC tourist attractions,48.95,False
+Washington DC,2024-08,things to do in Washington DC,51.87,False
+Washington DC,2024-08,visit Washington DC,52.87,False
+Washington DC,2024-08,Washington DC tourist attractions,53.87,False
+Washington DC,2024-09,things to do in Washington DC,57.17,False
+Washington DC,2024-09,visit Washington DC,58.17,False
+Washington DC,2024-09,Washington DC tourist attractions,59.17,False
+Washington DC,2024-10,things to do in Washington DC,62.3,False
+Washington DC,2024-10,visit Washington DC,63.3,False
+Washington DC,2024-10,Washington DC tourist attractions,64.3,False
+Washington DC,2024-11,things to do in Washington DC,66.74,False
+Washington DC,2024-11,visit Washington DC,67.74,False
+Washington DC,2024-11,Washington DC tourist attractions,68.74,False
+Washington DC,2024-12,things to do in Washington DC,70.04,True
+Washington DC,2024-12,visit Washington DC,71.04,True
+Washington DC,2024-12,Washington DC tourist attractions,72.04,True

@@ -1,0 +1,108 @@
+city,month,term,value,is_partial
+Seattle,2022-01,things to do in Seattle,57.62,False
+Seattle,2022-01,visit Seattle,58.62,False
+Seattle,2022-01,Seattle tourist attractions,59.62,False
+Seattle,2022-02,things to do in Seattle,59.91,False
+Seattle,2022-02,visit Seattle,60.91,False
+Seattle,2022-02,Seattle tourist attractions,61.91,False
+Seattle,2022-03,things to do in Seattle,60.6,False
+Seattle,2022-03,visit Seattle,61.6,False
+Seattle,2022-03,Seattle tourist attractions,62.6,False
+Seattle,2022-04,things to do in Seattle,59.64,False
+Seattle,2022-04,visit Seattle,60.64,False
+Seattle,2022-04,Seattle tourist attractions,61.64,False
+Seattle,2022-05,things to do in Seattle,57.18,False
+Seattle,2022-05,visit Seattle,58.18,False
+Seattle,2022-05,Seattle tourist attractions,59.18,False
+Seattle,2022-06,things to do in Seattle,53.53,False
+Seattle,2022-06,visit Seattle,54.53,False
+Seattle,2022-06,Seattle tourist attractions,55.53,False
+Seattle,2022-07,things to do in Seattle,49.12,False
+Seattle,2022-07,visit Seattle,50.12,False
+Seattle,2022-07,Seattle tourist attractions,51.12,False
+Seattle,2022-08,things to do in Seattle,44.47,False
+Seattle,2022-08,visit Seattle,45.47,False
+Seattle,2022-08,Seattle tourist attractions,46.47,False
+Seattle,2022-09,things to do in Seattle,40.15,False
+Seattle,2022-09,visit Seattle,41.15,False
+Seattle,2022-09,Seattle tourist attractions,42.15,False
+Seattle,2022-10,things to do in Seattle,36.65,False
+Seattle,2022-10,visit Seattle,37.65,False
+Seattle,2022-10,Seattle tourist attractions,38.65,False
+Seattle,2022-11,things to do in Seattle,34.4,False
+Seattle,2022-11,visit Seattle,35.4,False
+Seattle,2022-11,Seattle tourist attractions,36.4,False
+Seattle,2022-12,things to do in Seattle,33.68,False
+Seattle,2022-12,visit Seattle,34.68,False
+Seattle,2022-12,Seattle tourist attractions,35.68,False
+Seattle,2023-01,things to do in Seattle,34.62,False
+Seattle,2023-01,visit Seattle,35.62,False
+Seattle,2023-01,Seattle tourist attractions,36.62,False
+Seattle,2023-02,things to do in Seattle,37.13,False
+Seattle,2023-02,visit Seattle,38.13,False
+Seattle,2023-02,Seattle tourist attractions,39.13,False
+Seattle,2023-03,things to do in Seattle,40.99,False
+Seattle,2023-03,Seattle tourist attractions,42.99,False
+Seattle,2023-04,things to do in Seattle,45.81,False
+Seattle,2023-04,visit Seattle,46.81,False
+Seattle,2023-04,Seattle tourist attractions,47.81,False
+Seattle,2023-05,things to do in Seattle,51.09,False
+Seattle,2023-05,visit Seattle,52.09,False
+Seattle,2023-05,Seattle tourist attractions,53.09,False
+Seattle,2023-06,things to do in Seattle,56.28,False
+Seattle,2023-06,visit Seattle,57.28,False
+Seattle,2023-06,Seattle tourist attractions,58.28,False
+Seattle,2023-07,things to do in Seattle,60.85,False
+Seattle,2023-07,visit Seattle,61.85,False
+Seattle,2023-07,Seattle tourist attractions,62.85,False
+Seattle,2023-08,things to do in Seattle,64.35,False
+Seattle,2023-08,visit Seattle,65.35,False
+Seattle,2023-08,Seattle tourist attractions,66.35,False
+Seattle,2023-09,things to do in Seattle,66.4,False
+Seattle,2023-09,visit Seattle,67.4,False
+Seattle,2023-09,Seattle tourist attractions,68.4,False
+Seattle,2023-10,things to do in Seattle,66.84,False
+Seattle,2023-10,visit Seattle,67.84,False
+Seattle,2023-10,Seattle tourist attractions,68.84,False
+Seattle,2023-11,things to do in Seattle,65.64,False
+Seattle,2023-11,visit Seattle,66.64,False
+Seattle,2023-11,Seattle tourist attractions,67.64,False
+Seattle,2023-12,things to do in Seattle,62.98,False
+Seattle,2023-12,visit Seattle,63.98,False
+Seattle,2023-12,Seattle tourist attractions,64.98,False
+Seattle,2024-01,things to do in Seattle,59.18,False
+Seattle,2024-01,visit Seattle,60.18,False
+Seattle,2024-01,Seattle tourist attractions,61.18,False
+Seattle,2024-02,things to do in Seattle,54.7,False
+Seattle,2024-02,visit Seattle,55.7,False
+Seattle,2024-02,Seattle tourist attractions,56.7,False
+Seattle,2024-03,things to do in Seattle,50.07,False
+Seattle,2024-03,visit Seattle,51.07,False
+Seattle,2024-03,Seattle tourist attractions,52.07,False
+Seattle,2024-04,things to do in Seattle,45.84,False
+Seattle,2024-04,visit Seattle,46.84,False
+Seattle,2024-04,Seattle tourist attractions,47.84,False
+Seattle,2024-05,things to do in Seattle,42.5,False
+Seattle,2024-05,visit Seattle,43.5,False
+Seattle,2024-05,Seattle tourist attractions,44.5,False
+Seattle,2024-06,things to do in Seattle,40.47,False
+Seattle,2024-06,visit Seattle,41.47,False
+Seattle,2024-06,Seattle tourist attractions,42.47,False
+Seattle,2024-07,things to do in Seattle,40.0,False
+Seattle,2024-07,visit Seattle,41.0,False
+Seattle,2024-07,Seattle tourist attractions,42.0,False
+Seattle,2024-08,things to do in Seattle,41.18,False
+Seattle,2024-08,visit Seattle,42.18,False
+Seattle,2024-08,Seattle tourist attractions,43.18,False
+Seattle,2024-09,things to do in Seattle,43.92,False
+Seattle,2024-09,visit Seattle,44.92,False
+Seattle,2024-09,Seattle tourist attractions,45.92,False
+Seattle,2024-10,things to do in Seattle,47.95,False
+Seattle,2024-10,visit Seattle,48.95,False
+Seattle,2024-10,Seattle tourist attractions,49.95,False
+Seattle,2024-11,things to do in Seattle,52.87,False
+Seattle,2024-11,visit Seattle,53.87,False
+Seattle,2024-11,Seattle tourist attractions,54.87,False
+Seattle,2024-12,things to do in Seattle,58.17,False
+Seattle,2024-12,visit Seattle,59.17,False
+Seattle,2024-12,Seattle tourist attractions,60.17,False
